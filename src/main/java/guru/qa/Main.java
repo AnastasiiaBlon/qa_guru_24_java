@@ -93,7 +93,14 @@ public class Main {
 
         // key word: new
         //Переполнение
-        // System.out.println("[" + Byte.MIN_VALUE + " , " + Byte.MAX_VALUE + "]");
-        System.out.println("Byte.SIZE  =   " + Byte.SIZE);
-    }
+            int x = Integer.MAX_VALUE;
+            int y = Integer.MAX_VALUE;
+            int z = x * y;
+            System.out.println(z); // 1
+
+            double maxDouble = Double.MAX_VALUE;
+            double randomDouble = 4.5;
+            double resultDouble = maxDouble * randomDouble;
+            System.out.println(resultDouble); // Infinity
+        }
 }
